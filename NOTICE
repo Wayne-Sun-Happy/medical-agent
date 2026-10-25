@@ -1,0 +1,9 @@
+Medical Agent distribution
+
+Source project: https://gitee.com/leifengyang/tiangong-agent
+Upstream baseline: be822042bd1a025a4b5c6181dc6f6a1daab89a19
+Exported working-tree commit: 35ba2ccac044e97d243c082e9d8e40514d4bb484
+License: Apache-2.0; see LICENSE.
+
+Distribution changes: README.md, .gitignore, environment.yml and .env.example.
+Application Python sources are unchanged.

@@ -1,0 +1,10 @@
+# Distribution change: use the implementation dependency list.
+name: tiangong-medical
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.13.9
+  - pip
+  - pip:
+      - -r requirements.txt
