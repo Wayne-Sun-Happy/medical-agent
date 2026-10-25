@@ -44,14 +44,6 @@ python scripts/init_postgres.py
 
 `python scripts/init_neo4j.py` 会先删除目标 Neo4j 库中的全部节点，再导入图谱，只能对明确可重建的目标库执行。
 
-## 当前实现状态
 
-- 当前是单 Agent 与两个记忆工具的实现；五类业务 Agent、前端和完整文档 RAG 尚未完成。
-- `chat_endpoint()` 尚未注册为 HTTP 路由，因此当前 API 不提供完整聊天入口。
-- 原依赖清单包含 Windows 专用包 `pywin32`、`pywin32-ctypes`，Agent 文件存在 `pywin.framework.toolmenu` 导入；macOS/Linux 上需先处理平台兼容问题。
-- 部分模块混用 `src.*` 与顶层包导入路径，Agent / 集成测试仍有导入问题需要处理。
-- Agent 代码硬编码模型名；不能认为只修改 `CHAT_MODEL` 就会改变 Agent 使用的模型。
-- 集成测试存在写入病史与断言不一致的问题。测试代码随项目保留，未宣称测试通过。
-- 此发布副本仅完成文件范围、配置引用、语法及凭据模式检查，未验证完整 Agent、外部模型或全部存储服务端到端可用。
 
 
