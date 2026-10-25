@@ -54,8 +54,4 @@ python scripts/init_postgres.py
 - 集成测试存在写入病史与断言不一致的问题。测试代码随项目保留，未宣称测试通过。
 - 此发布副本仅完成文件范围、配置引用、语法及凭据模式检查，未验证完整 Agent、外部模型或全部存储服务端到端可用。
 
-## 来源与许可
 
-源项目：[leifengyang/tiangong-agent](https://gitee.com/leifengyang/tiangong-agent)。本仓库保留上游实现与 Apache-2.0 `LICENSE`。
-
-本发布副本重新整理 README、忽略规则及 Conda 依赖入口，并清空环境模板中的模型密钥；业务 Python 源码保持原样。来源版本信息见 `NOTICE`。
